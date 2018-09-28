@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+	float a,b,c,media=0;
+	printf("entre com nota AV1:");
+	scanf("%f",&a);
+	printf("entre com nota AV2:");
+	scanf("%f",&b);
+	printf("entre com nota AV3:");
+	scanf("%f",&c); 
+	media=(a+b+c)/3;
+	if(media<6)
+	{
+	printf("ficou reprovado");
+    }
+    else
+    {
+    printf("passou");
+	}
+	system("pause");
+	return 0;
+}

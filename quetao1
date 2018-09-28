@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int i,mes;
+int ano=2016;
+printf("entre com um mes:");
+scanf("%d",&mes);
+if(mes==2)
+{
+ for(i=1;i<=28;i++)
+ mes=02;
+ printf("\n %d/%d/%d",i,mes,ano);
+ }
+ else if(mes==1||mes==3||mes==5||mes==7||mes==8||mes==10||mes==12)
+ {
+ for(i=1;i<=31;i++)
+ printf("\n %d/%d/%d",i,mes,ano);
+ }
+ else
+ {
+ for(i=1;i<=30;i++)
+ printf("\n %d/%d/%d",i,mes,ano);
+ }
+ system("pause");
+ return 0;
+ }
+ 

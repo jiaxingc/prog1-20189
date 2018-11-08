@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+  {
+  int i,j,quant=0,soma=0,kilo=0;
+  int times[5][11];
+  float media=0,rest=0,percentagem=0;                     
+  
+ //a idade
+  for(i=0;i<5;i++){
+  for(j=0;j<11;j++){
+  printf("\n entre com [%d,%d]a idade de jogadores de cada times:",i+1,j+1);
+  scanf("%d",&times[i][j]);
+   if (times[i][j]<18){
+     quant=quant+1;
+    }
+   }
+  }
+   //a) a quantidade de jogadores
+  printf("\n a quantidade de jogadores com idade inferior a 18 anos e:%d",quant);
+  //b)a media das idades
+  for(i=0;i<5;i++){
+  for(j=0;j<11;j++){
+  soma=soma+times[i][j];
+  }
+  }
+  media=soma/6; 
+  printf("\n a media das idades dos jogadores de cada time e:%.2f",media);
+  
+  //a altura
+  for(i=0;i<5;i++){
+  for(j=0;j<11;j++){
+  printf("\n entre com [%d,%d]a altura de jogadores de cada times:",i+1,j+1);
+  scanf("%d",&times[i][j]);
+  }
+   }
+   printf("\n \n \n");
+   //c)a media da altura
+    for(i=0;i<5;i++){
+   for(j=0;j<11;j++){
+   rest=rest+times[i][j];
+   }
+   }
+   media=rest/6; 
+   printf("\n a media das alturas dos jogadores de cada time e:%.2f",media);//?  
+   //d)o peso
+   for(i=0;i<5;i++){
+  for(j=0;j<11;j++){
+  printf("\n entre com [%d,%d]o peso de jogadores de cada times:",i+1,j+1);
+  scanf("%d",&times[i][j]);
+  if(times[i][j]>80){
+   kilo=kilo+1;
+   }
+     }
+     }
+   printf("\n a quantidade de jogadores com mais de 80 kilos e:%d",kilo);
+   percentagem=(kilo*100)/6.0;
+   printf("percental =%.2f%%",percentagem);
+   
+  
+  
+	system("pause");
+	return 0;
+   } 

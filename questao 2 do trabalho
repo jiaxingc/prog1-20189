@@ -1,0 +1,67 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+  {
+  char resp;
+  int s=0;
+  int tam;
+  printf("\n responder com 's' ou 'n'");
+  printf("\nTelefonou para a vítima?");
+    fflush(stdin);
+    scanf("%c",&resp);
+    if(resp=='s')
+    {
+    s=s+1;
+    }
+   
+  printf("\n Esteve no local do crime?");
+    fflush(stdin);
+    scanf("%c",&resp);
+    if(resp=='s')
+    {
+    s=s+1;
+    }
+  printf("\n Mora perto da vítima?");
+    fflush(stdin);
+    scanf("%c",&resp);
+    if(resp=='s')
+    {
+    s=s+1;
+    }
+  printf("\n Devia para a vítima?");
+    fflush(stdin);
+    scanf("%c",&resp);
+
+    if(resp=='s')
+    {
+    s=s+1;
+    }
+  printf("\n Já trabalhou com a vítima?");
+  fflush(stdin);
+    scanf("%c",&resp);
+    if(resp=='s')
+    {
+    s=s+1;
+    }
+    
+    
+    if(s==2)
+    {
+    printf("Suspeita");
+    }
+    else if(s==3||s==4)
+    {
+    printf("Cumplice");
+    }
+    else if(s==5)
+    {
+    printf("Assassino");
+    }
+    else
+    {
+    printf("Inocente");
+    }
+    
+    system("pause");
+    return 0;
+   }

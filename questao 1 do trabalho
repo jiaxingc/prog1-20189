@@ -24,7 +24,7 @@ int main()
   soma=soma+times[i][j];
   }
   }
-  media=soma/6; 
+  media=soma/55; 
   printf("\n a media das idades dos jogadores de cada time e:%.2f",media);
   
   //a altura
@@ -41,7 +41,7 @@ int main()
    rest=rest+times[i][j];
    }
    }
-   media=rest/6; 
+   media=rest/55; 
    printf("\n a media das alturas dos jogadores de cada time e:%.2f",media);//?  
    //d)o peso
    for(i=0;i<5;i++){
@@ -54,7 +54,7 @@ int main()
      }
      }
    printf("\n a quantidade de jogadores com mais de 80 kilos e:%d",kilo);
-   percentagem=(kilo*100)/6.0;
+   percentagem=(kilo*100)/55.0;
    printf("percental =%.2f%%",percentagem);
    
   

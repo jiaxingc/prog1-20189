@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main ()
+{
+    int MZ[4][4];
+	int i,j,linha=0, coluna=0,somatotal=0;
+	//entre com os dados
+	for(i=0;i<4;i++)
+	{
+    for(j=0;j<4;j++)
+	{
+     printf("\n entre com os elementos[%d,%d]:",i+1,j+1);
+     scanf("%d",&MZ[i][j]);
+			}		
+	}
+	//soma os elementos
+	for(i=0;i<4;i++)
+	{
+    for(j=0;j<4;j++){
+      linha=MZ[2][0]+MZ[2][1]+MZ[2][2]+MZ[2][3];
+	      }
+	  }
+	      printf("\n a soma de  total de teceira linha e %d",linha);
+                    
+    for(i=0;i<4;i++)
+    {
+    	for(j=0;j<4;j++)
+    	{
+    	coluna=MZ[0][1]+MZ[1][1]+MZ[2][1]+MZ[3][1];
+		}
+	}
+		printf("\n a  soma de  total de segunda coluna e %d",coluna);
+	somatotal=linha+coluna;
+	printf("\n o somatório e %d",somatotal);
+	system("pause");
+	return 0;
+	
+}

@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int peso,objeto[3000];
+	int soma=0,menor=1000,i;
+	for(i=0;i<3000;i++)
+	{
+	printf("entre com %d peso em gramas:",i+1);
+	scanf("%d",&objeto[i]);
+    }
+    for(i=0;i<3000;i++)
+    {
+    if(objeto[i]<menor)
+    {
+    	menor=objeto[i];
+    	soma=soma+1;
+	}
+}
+    printf("\n o menor peso e %d",menor);
+	printf("\n tem %d objeto com memor peso",soma);
+	system("pause");
+	return 0;
+}

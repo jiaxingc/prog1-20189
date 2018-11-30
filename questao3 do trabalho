@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int vetor[10],caso=0;
+	int i;
+	for(i=0;i<10;i++)
+	{
+		printf("entre com %d elemento:",i+1);
+		scanf("%d",&vetor[i]);
+	}
+	for(i=0;i<10;i++)
+	{
+		if((vetor[0]<vetor[1])&&(vetor[1]<vetor[2])&&(vetor[2]<vetor[3])&&(vetor[3]<vetor[4])&&(vetor[4]<vetor[5])&&(vetor[5]<vetor[6])&&(vetor[6]<vetor[7])&&(vetor[7]<vetor[8])&&(vetor[8]<vetor[9]))
+		{
+			caso=1;
+		}
+		else if((vetor[0]>vetor[1])&&(vetor[1]>vetor[2])&&(vetor[2]>vetor[3])&&(vetor[3]>vetor[4])&&(vetor[4]>vetor[5])&&(vetor[5]>vetor[6])&&(vetor[6]>vetor[7])&&(vetor[7]>vetor[8])&&(vetor[8]>vetor[9]))
+		{
+	    	caso=2;
+		}
+		else
+		{
+			caso=3;
+		}
+		}
+			if(caso==1){
+				printf("O vetor esta em ordem crescente");
+				}
+				else if(caso==2)
+				{
+				printf(" O vetor esta em ordem decrescente");	
+				}
+				else{
+				printf("O vetor nao esta em ordem");
+				}
+	system("pause");
+	return 0;
+}

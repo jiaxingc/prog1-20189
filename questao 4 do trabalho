@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int A[3],B[5];
+	int i,maxA=0,maxB=0;
+	//
+	for(i=0;i<3;i++){
+		printf("\n entre com %d elemento de A:",i,i+1);
+		scanf("%d",&A[i]);
+	}
+		for(i=0;i<5;i++){
+		printf("\n entre com %d elemento de B:",i,i+1);
+		scanf("%d",&B[i]);
+	}
+	//o maior elemento
+	for(i=0;i<3;i++){
+		if(maxA<A[i]){
+			maxA=A[i];
+		}
+	}
+	for(i=0;i<5;i++){
+		if(maxB<B[i]){
+			maxB=B[i];
+		}
+	}
+	if(maxA==maxB){
+		printf("Ambos os vetores possuem os valores maximos" );
+	}else if(maxA>maxB)
+	{
+	printf("O maior valor esta no vetor A:%d ", maxA);
+     } 
+     else
+     {
+     	printf ("O maior valor esta no vetor B:%d ", maxB);
+	 }
+              
+	system("pause");
+	return 0;
+ }

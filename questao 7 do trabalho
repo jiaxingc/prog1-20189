@@ -1,0 +1,74 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int errada[10],certa[10],questao[10],somanotas=0, i,nota,a;
+	float media;
+	char gabarito[10],resposta[10];
+	printf("gabarito");
+	for(i=0;i<10;i++)
+	{
+		printf("%s",gabarito[i]);
+	}
+	printf("\n");
+}
+  for(i=0;i<10;i++)
+{
+	printf("A resposta da %d questao :i+1");
+	scanf("%s",&resposta[i]);
+}
+ printf ("questao ");
+ printf(" resposta  ");
+ printf("gabarito  ");
+ printf("situacao ");
+  for(i=0;i<10;i++)
+ {
+	if(reposta[i]==gabarito[i])
+	{
+	printf("%d \t %s\t %s \t correta \n",i+1,resposta[i],gabarito[i]);
+	certa[i]==1;
+	questao++;
+	}
+	//?
+if(resposta[i]!=gabarito[i])
+{
+	printf("%d \t %s \t %s \t incorreta \n",i+1,resposta[i],gabarito[i]);
+}
+}
+ for(i=0;i<10;i++)
+{
+if(certa==1)
+{
+	nota++;
+}
+	}
+	printf("o aluno tirou %d",nota);
+	printf("deseja inserir mais alugum aluno?(1-sim/0-nao)");
+	scanf("%d",continuar);
+    if (continuar==1)
+	{
+		a++;
+
+todosalunos=todosalunos+a;
+a=1;
+for(i=0;i<todosalunos;i++)
+{
+	printf("o aluno %d tirou %d\n",a++,todos[i]);
+}
+for(i=0;i<10;i++)
+{
+	if(questao[i]<=questao[imemor])
+	imenor=i;
+	imaior=i;
+}
+printf("\n 1)A questao %d teve mais acertos \n A questao 5d teve menos acertos\n",imaior+1,imenor+1);
+prtinf("\n 2) %d alunos ultilizaram",todosalunos);
+for(i=0;i<todosalunos;i++)
+{
+	somanotas=somnotas+todos[i];
+}
+media=somanotas/todosalunos;
+printf("\n 3)a media de todos alunos foi:1.f%",media);
+system("pause");
+return 0;
+}
